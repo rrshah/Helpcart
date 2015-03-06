@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Helpcart</title>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+	<script src="js/login.js"></script>
+
+</head>
+
+<body background="bb.png">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Helpcart</a>
+			</div>	
+				<div>
+					<ul class="nav navbar-nav navbar-right">
+					    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li><a href="#loginmodal" id="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>    	
+						<div id="loginmodal" style="display:none;">
+							<h1>User Login</h1>
+							<form id="loginform" name="loginform" method="post" action="index.html">
+							  <label for="username">Username:</label>
+							  <input type="text" name="username" id="username" class="txtfield" tabindex="1">
+							  
+							  <label for="password">Password:</label>
+							  <input type="password" name="password" id="password" class="txtfield" tabindex="2">
+							  
+							  <div class="center"><input type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Log In" tabindex="3"></div>
+							</form>
+						</div>	
+					</ul>
+   				 </div>
+		</div>
+	</nav>
+
+
+	
+	<div class="jumbotron">
+		<div class="container">			
+			<br><br>
+			<p style="text align:justify">Do you want to get the best of domestic help and driving services? Do you want to get domestic help and drivers without having to step out of your home?  If your answer is yes, Helpcart is the place for you!</p>
+		</div>
+	</div>
+
+	<div class="container">	
+		<br><br><br>
+		<div class="row">
+			<a href="cook.html">
+				<img style="margin: 0px 15px" src="cook.jpg" title="Cook" class="img-circle" alt="Cook" width="200" height="200"  class="thumbnail img-responsive">
+			</a>
+		
+			<a href="chauffeur.html">
+				<img style="margin: 0px 15px" src="chauffeur.jpg" title="Chauffeur" class="img-circle" alt="Chauffeur" width="200" height="200"  class="thumbnail img-responsive">
+			</a>
+
+			<a href="nanny.html">
+				<img style="margin: 0px 15px" src="nanny.jpg" title="Nanny" class="img-circle" alt="Nanny" width="200" height="200"  class="thumbnail img-responsive">
+			</a>
+	
+			<a href="caretaker.html">
+				<img style="margin: 0px 15px" src="caretaker.jpg" title="Care Taker" class="img-circle" alt="Care Taker" width="200" height="200"  class="thumbnail img-responsive">
+			</a>
+	
+			<a href="cleaner.html">
+				<img style="margin: 0px 15px" src="cleaner.jpg" title="Cleaner" class="img-circle" alt="Cleaner" width="200" height="200"  class="thumbnail img-responsive">
+			</a>
+		</div>
+	</div>
+	
+	
+	<footer style=" position:fixed; height:50px; background-color:#E3E3E3; bottom:0px; left:0px; right:0px; margin-bottom:0px;">
+		<div class="container">
+			<br>
+			<div class="row">
+			    <div class="col-md-4">
+	           		<a href="#" class="text-muted">&copy Helpcart.com 2015</a>
+				</div>
+				<div class="col-md-4"></div>
+			    <div class="col-md-2">
+	           		<a href="#" class="text-muted">About Us</a>
+				</div>
+				<div class="col-md-2">
+					<a href="#" class="text-muted">Contact Us</a>
+				</div>
+			</div>
+	  	</div>
+	</footer>
+	
+<script type="text/javascript">
+$(function(){
+  $('#loginform).submit(function(e){
+    return false;
+  });
+  
+  $('#modaltrigger').leanModal({ top: 110, overlay: 0.45, closeButton: ".hidemodal" });
+});
+</script>
+</body>
+
+</html>

@@ -2579,7 +2579,7 @@ input[type="search"] {
   input[type="time"],
   input[type="datetime-local"],
   input[type="month"] {
-    line-height: 34px;
+    line-height: 14px;
   }
   input[type="date"].input-sm,
   input[type="time"].input-sm,
@@ -2589,7 +2589,7 @@ input[type="search"] {
   .input-group-sm input[type="time"],
   .input-group-sm input[type="datetime-local"],
   .input-group-sm input[type="month"] {
-    line-height: 30px;
+    line-height: 14px;
   }
   input[type="date"].input-lg,
   input[type="time"].input-lg,

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<body> 
+ 
+<form>
+	<p><b>Preferred Food Type:</b></p>
+	<div class="radio">
+		<label><input type="radio" name="optradio" required>Vegetarian</label>
+		<label><input type="radio" name="optradio" required>Non-Vegetarian</label>
+	</div>
+	<br>
+
+	<p><b>Select the day:</b></p>
+  	<input type="date" name="bday" required>
+
+	<p><b>Select a time:</b>(Hr:Min am/pm)</p>
+  	<input type="time" name="usr_time" required>
+
+	<br><br>
+	<div class="container">
+  	<form role="form">
+    		<div class="form-group">
+		<label for="sel1"><b>Select total hours of operation:</b></label>
+      		<select class="form-control" id="sel1">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			<option>Permanent</option>
+	        </select>
+		</div>
+	</form>
+	<br><br>
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>
